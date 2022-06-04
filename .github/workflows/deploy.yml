@@ -1,7 +1,10 @@
  
-name: Deploy
+name: Hexo Build and Deploy
 
-on: [push]
+on:
+  push:
+    branches:
+      - master # default branch
 
 jobs:
   build:
@@ -11,10 +14,22 @@ jobs:
     - name: Download Branch
       uses: actions/checkout@v2
 
-    - name: Build and Deploy
-      uses: renzhaosy/hexo-deploy-action@master
-      env:
-        PERSONAL_TOKEN: ${{ secrets.DEPLOY_KEY }}
-        PUBLISH_REPOSITORY: ho-229/ho-229.github.io # The repository the action should deploy to.
-        BRANCH: gh-page  # The branch the action should deploy to.
-        PUBLISH_DIR: ./public # The folder the action should deploy.
+    # Caching dependencies to speed up workflows. (GitHub will remove any cache entries that have not been accessed in over 7 days.)
+    - name: Cache node modules
+      uses: actions/cache@v1
+      id: cache
+      with:
+        path: node_modules
+        key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
+        restore-keys: |
+          ${{ runner.os }}-node-
+
+    - name: Install Dependencies
+      if: steps.cache.outputs.cache-hit != 'true'
+      run: npm ci
+
+    # Deploy hexo blog website.
+    - uses: yrpang/github-actions-hexo@master
+      with:
+        github_token: ${{ secrets.DEPLOY_KEY }}
+        branch: 'gh-page'
