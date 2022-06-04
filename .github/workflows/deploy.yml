@@ -31,5 +31,4 @@ jobs:
     # Deploy hexo blog website.
     - uses: yrpang/github-actions-hexo@master
       with:
-        github_token: ${{ secrets.DEPLOY_KEY }}
-        branch: 'gh-page'
+        deploykey: ${{ secrets.DEPLOY_KEY }}
