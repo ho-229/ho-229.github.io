@@ -1,0 +1,31 @@
+.highlight
+    background: #011627
+    border-radius: 7px
+    box-shadow: 0 10px 30px 0 rgba(0, 0, 0, .4)
+    padding-top: 30px
+
+    &::before
+      background: #fc625d
+      border-radius: 50%
+      box-shadow: 20px 0 #fdbc40, 40px 0 #35cd4b
+      content: ' '
+      height: 15px
+      left: 15px
+      margin-top: -21px
+      position: absolute
+      width: 15px
+
+.copy-btn {
+    // 注意：top 是和折叠功能共生的
+    top: 5px;
+    font-size: 1rem;
+
+    > i {
+        font-size: 0.875rem;
+        font-weight: bold;
+    }
+}
+
+.copy-btn-dark {
+    color: darkslategrey;
+}

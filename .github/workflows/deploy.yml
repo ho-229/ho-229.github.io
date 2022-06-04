@@ -1,0 +1,20 @@
+ 
+name: Deploy
+
+on: [push]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Download Branch
+      uses: actions/checkout@v2
+
+    - name: Build and Deploy
+      uses: renzhaosy/hexo-deploy-action@master
+      env:
+        PERSONAL_TOKEN: ${{ secrets.DEPLOY_KEY }}
+        PUBLISH_REPOSITORY: ho-229/ho-229.github.io # The repository the action should deploy to.
+        BRANCH: gh-page  # The branch the action should deploy to.
+        PUBLISH_DIR: ./public # The folder the action should deploy.
