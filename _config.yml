@@ -103,7 +103,7 @@ theme: fluid
 
 # Deployment
 ## Docs: https://hexo.io/docs/one-command-deployment
-# deploy:
-#   type: 'git'
-#   repo: git@github.com:ho-229/ho-229.github.io.git
-#   branch: gh-pages
+deploy:
+  type: 'git'
+  repo: git@github.com:ho-229/ho-229.github.io.git
+  branch: gh-page
