@@ -1,4 +1,4 @@
- name: Hexo Build and Deploy
+name: Hexo Build and Deploy
 
 on:
   push:
