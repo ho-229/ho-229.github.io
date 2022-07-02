@@ -13,6 +13,10 @@ jobs:
     - name: Download Branch
       uses: actions/checkout@v2
 
+    - name: Create CNAME
+      run: |
+        echo 'ho229.lind0.space' > ./public/CNAME
+
     # Deploy hexo blog website.
     - name: Build and Deploy
       uses: canhetingsky/hexo-deploy-action@master
