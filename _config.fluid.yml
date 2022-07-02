@@ -237,14 +237,6 @@ custom_js:
 # The usage is the same as custom_js
 custom_css:
 
-# 自定义 <head> 节点中的 HTML 内容
-# Customize <head> HTML content
-custom_head: ''
-
-# 自定义底部 HTML 内容（位于 footer 上方），注意不要和 `post: custom` 配置冲突
-# Customize the HTML content at the bottom (located above the footer), be careful not to conflict with `post: custom`
-custom_html: ''
-
 # 网页访问统计
 # Analysis of website visitors
 web_analytics:  # 网页访问统计
@@ -299,7 +291,7 @@ web_analytics:  # 网页访问统计
     # Get the attribute of the page path during statistics
     path: window.location.pathname
     # 开启后不统计本地路径( localhost 与 127.0.0.1 )
-    # If ture, ignore localhost & 127.0.0.1
+    # If true, ignore localhost & 127.0.0.1
     ignore_local: false
 
 # 对页面中的图片和评论插件进行懒加载处理，可见范围外的元素不会提前加载
@@ -945,9 +937,9 @@ static_prefix:
 
   bootstrap: https://lib.baomitu.com/twitter-bootstrap/4.6.1/
 
-  prismjs: https://lib.baomitu.com/prism/1.26.0/
+  prismjs: https://lib.baomitu.com/prism/1.27.0/
 
-  tocbot: https://lib.baomitu.com/tocbot/4.18.0/
+  tocbot: https://lib.baomitu.com/tocbot/4.18.2/
 
   typed: https://lib.baomitu.com/typed.js/2.0.12/
 
@@ -955,24 +947,24 @@ static_prefix:
 
   nprogress: https://lib.baomitu.com/nprogress/0.2.0/
 
-  mathjax: https://lib.baomitu.com/mathjax/3.2.0/
+  mathjax: https://lib.baomitu.com/mathjax/3.2.1/
 
-  katex: https://lib.baomitu.com/KaTeX/0.15.2/
+  katex: https://lib.baomitu.com/KaTeX/0.15.6/
 
   busuanzi: https://busuanzi.ibruce.info/busuanzi/2.3/
 
   clipboard: https://lib.baomitu.com/clipboard.js/2.0.10/
 
-  mermaid: https://lib.baomitu.com/mermaid/8.13.10/
+  mermaid: https://lib.baomitu.com/mermaid/8.14.0/
 
-  valine: https://lib.baomitu.com/valine/1.4.16/
+  valine: https://lib.baomitu.com/valine/1.4.17/
 
-  waline: https://lib.baomitu.com/waline/2.3.2/
+  waline: https://lib.baomitu.com/waline/2.5.1/
 
   gitalk: https://lib.baomitu.com/gitalk/1.7.2/
 
   disqusjs: https://lib.baomitu.com/disqusjs/1.3.0/
 
-  twikoo: https://lib.baomitu.com/twikoo/1.4.17/
+  twikoo: https://lib.baomitu.com/twikoo/1.5.11/
 
   hint: https://lib.baomitu.com/hint.css/2.7.0/
