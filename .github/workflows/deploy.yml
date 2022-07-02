@@ -20,7 +20,7 @@ jobs:
 
     # Deploy hexo blog website.
     - name: Build and Deploy
-      uses: canhetingsky/hexo-deploy-action@master
+      uses: ho-229/hexo-deploy-action@master
       env:
         PERSONAL_TOKEN: ${{ secrets.TOKEN }}
         PUBLISH_REPOSITORY: ho-229/ho-229.github.io # The repository the action should deploy to.
