@@ -15,7 +15,9 @@ jobs:
 
     - name: Create CNAME
       run: |
-        echo 'ho229.lind0.space' > ./public/CNAME
+        pwd
+        ls
+        echo 'ho229.lind0.space' > CNAME
 
     # Deploy hexo blog website.
     - name: Build and Deploy
