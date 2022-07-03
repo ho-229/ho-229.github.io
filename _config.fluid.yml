@@ -891,7 +891,19 @@ links:
       link: "http://natsume.xyz/",
       avatar: "http://natsume.xyz/images/IMG_0711.JPG"
     }
-
+    - {
+      title: "蒟蒻",
+      intro: "Digital Evergarden",
+      link: "https://hee.ink/",
+      avatar: "https://hee.ink/img/avatar_hu57a3b7fd3af93cafea430cda8e8c2e34_543494_300x0_resize_q75_h2_box_2.webp"
+    }
+    - {
+      title: "Inoki",
+      intro: "大智若鱼",
+      link: "https://blog.inoki.cc/",
+      avatar: "https://blog.inoki.cc/images/avatar.jpg"
+    }
+    
   # 当成员头像加载失败时，替换为指定图片
   # When the member avatar fails to load, replace the specified image
   onerror_avatar: /img/avatar.png
