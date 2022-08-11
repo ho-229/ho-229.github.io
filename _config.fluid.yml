@@ -906,8 +906,7 @@ links:
     - {
       title: "Zitrone🍋",
       intro: "毕竟是易消的残雪",
-      link: "https://rtway.top/",
-      avatar: "https://pbs.twimg.com/profile_images/1548139649943490561/hNerXsmS_400x400.jpg"
+      link: "https://zitrone.cat/",
     }
     
   # 当成员头像加载失败时，替换为指定图片
