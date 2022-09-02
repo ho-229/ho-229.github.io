@@ -67,7 +67,7 @@ flowchart TB
 
 先来看看大致的并发模型，其思想是 `one loop per thread`。在 WebServer::start() 中创建了 N 个工作线程和 EventLoop，然后将 listeners 分发到每一个 EventLoop。在 EventLoop::exec() 中循环调用 Epoll::epoll() 等待请求到达，并调用 AbstractServices::process() 处理 I/O 和协议相关的业务。
 
-这种多线程 + [I/O 多路复用](#i-o-多路复用及跨平台实现) 的并发模型类似于 Nginx（把进程换成了线程）。每个 EventLoop 之间相互独立，所以工作线程之间没有显式的同步代码，也没有切换进程上下文开销。
+这种多线程 + [I/O 多路复用](#io-多路复用及跨平台实现) 的并发模型类似于 Nginx（把进程换成了线程）。每个 EventLoop 之间相互独立，所以工作线程之间没有显式的同步代码，也没有切换进程上下文开销。
 
 ## Socket 抽象及跨平台实现
 
@@ -167,7 +167,7 @@ public:
 
 接下来就是 epoll 高效的秘密了。epoll 的边缘触发（`EPOLLET`）可以让一个事件在新的事件到来之前只触发一次，比起水平触发来说就少了许多冗余事件。还有一个是在 Linux 4.5+ 提供的 `EPOLLEXCLUSIVE`，它能使被监听的套接字只能触发一个 epoll，完美解决了惊群问题。更低版本的 Linux 可以让每个 EventLoop 持有一组 listeners 并设置 `SO_REUSEPORT` 让它们能监听同一组端口。
 
-[关于 Epoll 的碎碎念](#关于-epoll-1)
+[关于 Epoll 的碎碎念](#关于-epoll)
 
 ### Unix / MacOS / BSD（kqueue）
 
@@ -345,7 +345,7 @@ graph LR
 
 ### 亿些教训
 
-#### malloc()
+#### glibc malloc()
 
 既然用的是 C++ 就肯定少不了喜闻乐见的内存安全问题。当你遇到下面的报错会怎么办呢：
 
