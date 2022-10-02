@@ -920,6 +920,12 @@ links:
       link: "https://qingdkj.xyz",
       avatar: "https://cdn.luogu.com.cn/upload/image_hosting/h1lf4rln.png"
     }
+    - {
+      title: "仕麟的博客",
+      intro: "Great men are not born great, they grow great.",
+      link: "https://edward40.com/",
+      avatar: "https://edward40.com/img/kirito_hu9470a11a20a3a08d10a50c3f6b1883f5_79246_300x0_resize_q75_box.jpg"
+    }
     
   # 当成员头像加载失败时，替换为指定图片
   # When the member avatar fails to load, replace the specified image
