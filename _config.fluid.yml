@@ -926,6 +926,12 @@ links:
       link: "https://edward40.com/",
       avatar: "https://edward40.com/img/kirito_hu9470a11a20a3a08d10a50c3f6b1883f5_79246_300x0_resize_q75_box.jpg"
     }
+    - {
+      title: "UMR's Blog",
+      intro: "一个专注于读书、音乐、思想的小站",
+      link: "https://umr.wiki/",
+      avatar: "https://umr.wiki/usr/uploads/2022/11/3038633460.jpg"
+    }
     
   # 当成员头像加载失败时，替换为指定图片
   # When the member avatar fails to load, replace the specified image
