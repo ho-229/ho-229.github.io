@@ -932,6 +932,12 @@ links:
       link: "https://umr.wiki/",
       avatar: "https://umr.wiki/usr/uploads/2022/11/3038633460.jpg"
     }
+    - {
+      title: "Remi IO 🦇",
+      intro: "🐦@Remi_IO - ❤️ KIGU, CODE & C0FFEE",
+      link: "https://www.linux.dog",
+      avatar: "https://raw.githubusercontent.com/u-u-z/u-u-z/main/img/Remi_IO.JPG"
+    }
     
   # 当成员头像加载失败时，替换为指定图片
   # When the member avatar fails to load, replace the specified image
