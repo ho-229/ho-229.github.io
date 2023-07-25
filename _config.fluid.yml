@@ -940,6 +940,12 @@ links:
       link: "https://page.adv.org.ua/",
       avatar: "https://pbs.twimg.com/profile_images/1680812977791066115/JS5hcxMu.jpg"
     }
+    - {
+      title: "ℂ𝕚𝕔𝕒𝕕𝕒𝟘𝟘𝟘",
+      intro: "在平坦的路面上曲折前行",
+      link: "https://www.cicada000.work/",
+      avatar: "https://pbs.twimg.com/profile_images/1639593363690360833/s3gHWEhG.jpg"
+    }
     
   # 当成员头像加载失败时，替换为指定图片
   # When the member avatar fails to load, replace the specified image
