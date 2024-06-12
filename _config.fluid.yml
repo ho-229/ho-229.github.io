@@ -913,8 +913,8 @@ links:
     - {
       title: "空空の杂货铺",
       intro: "空空的博客，记录一些文字",
-      link: "https://qingdkj.xyz",
-      avatar: "https://cdn.luogu.com.cn/upload/image_hosting/h1lf4rln.png"
+      link: "https://blog.parolluvia.ink",
+      avatar: "https://blog.parolluvia.ink/images/favicon.png"
     }
     - {
       title: "仕麟的博客",
@@ -935,16 +935,9 @@ links:
       avatar: "https://raw.githubusercontent.com/u-u-z/u-u-z/main/img/Remi_IO.JPG"
     }
     - {
-      title: "El Nedifinita",
-      intro: "A rookie high school student.",
-      link: "https://page.adv.org.ua/",
-      avatar: "https://pbs.twimg.com/profile_images/1680812977791066115/JS5hcxMu.jpg"
-    }
-    - {
       title: "ℂ𝕚𝕔𝕒𝕕𝕒𝟘𝟘𝟘",
       intro: "在平坦的路面上曲折前行",
       link: "https://www.cicada000.work/",
-      avatar: "https://pbs.twimg.com/profile_images/1639593363690360833/s3gHWEhG.jpg"
     }
     
   # 当成员头像加载失败时，替换为指定图片
@@ -1019,3 +1012,5 @@ static_prefix:
   discuss: https://lib.baomitu.com/discuss/1.2.1/
 
   hint: https://lib.baomitu.com/hint.css/2.7.0/
+
+  moment: https://lib.baomitu.com/moment.js/2.29.4/
