@@ -1,0 +1,33 @@
+.category .row {
+  border-radius: 1rem;
+}
+.category .category-item {
+  border-radius: 1rem;
+}
+.category .category-post-list {
+  border-radius: 1rem;
+}
+.list-group {
+  border-radius: 1rem;
+}
+.list-group-item {
+  border-radius: 1rem;
+}
+.links .card-body {
+  border-radius: 1rem;
+}
+.navbar .nav-item .nav-link {
+  border-radius: 0.5rem;
+}
+.navbar .dropdown-menu {
+  border-radius: 0.5rem;
+}
+.navbar .dropdown-item {
+  border-radius: 0.25rem;
+}
+#board {
+  border-radius: 1rem;
+}
+#scroll-top-button {
+  border-radius: 0.5rem;
+}
